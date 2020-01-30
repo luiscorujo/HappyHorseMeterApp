@@ -29,7 +29,7 @@ Start with:
     
 Check that the installation worked:
     
-    $ pip --version
+    $ pip3 --version
     
 The output should be similar to this:
     
@@ -48,7 +48,7 @@ Create a virtual environment:
 
 Install the requirements:
     
-    $ pip install -r requirements.txt
+    $ pip3 install -r requirements.txt
    
 
 ## Run 
