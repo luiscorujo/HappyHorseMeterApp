@@ -6,7 +6,7 @@ In order to run the application you can follow the instructions below:
 
 **Install Python**
 
-Install brew, paste this in a macOS Terminal prompt.
+Install brew, paste this in macOS Terminal prompt.
     
     $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
@@ -71,7 +71,7 @@ To run the program:
 
 Go to https://www.python.org/downloads/windows and download python's 3.7.6 version, happyhorsemeter doesn't work with python8 at the moment.
 
-Execute the downloaded installer and follow the instructions (**make sure you check the option "Add Python 3.7 to PATH"**). 
+Execute the downloaded installer and follow the instructions :rotating_light:(**make sure you check the option "Add Python 3.7 to PATH"**).
 If you don't check this option you will get an error when trying to run the commands below. The error is similar to this: "python" is not recognized as a command or an external command ...
 
 
