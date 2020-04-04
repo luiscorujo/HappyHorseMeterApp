@@ -43,16 +43,21 @@ class Model:
         # Visualize detected bounding boxes.
         num_detections = int(out[0][0])
         croped_image = None
-        for i in range(num_detections):
+        detected = False
+        i = 0
+        while i < num_detections:
             score = float(out[1][0][i])
             bbox = [float(v) for v in out[2][0][i]]
-            if score > 0.3:
+            if score > 0.4:
+                detected = True
                 x = bbox[1] * width
                 y = bbox[0] * height
                 right = bbox[3] * width
                 bottom = bbox[2] * height
                 croped_image = original_img[int(y):int(bottom), int(x):int(right)]
                 cv.rectangle(original_img, (int(x), int(y)), (int(right), int(bottom)), (125, 255, 51), thickness=2)
+            if detected:
+                i = num_detections
 
         cv.imwrite('result.jpg', original_img)
         cv.waitKey(500)
